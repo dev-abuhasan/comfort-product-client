@@ -1,0 +1,38 @@
+.section_products {
+    .single_product {
+        position: relative;
+
+        .img_parent {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            img {
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .overlay {
+            h4 {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                border-radius: 10px;
+                padding: 5px;
+                font-size: 16px;
+                margin: 0;
+                min-width: 40px;
+                text-align: center;
+            }
+            .product_edit{
+                left: auto;
+                right: 10px;
+            }
+            .category{
+                display: flex;
+            }
+        }
+    }
+}
